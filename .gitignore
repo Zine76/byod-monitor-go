@@ -1,0 +1,44 @@
+# Fichier d'environnement contenant des secrets et configurations locales
+.env
+
+# Le fichier CSV réel contenant les données sensibles des appareils
+# (On versionnera appareils.example.csv à la place)
+appareils.csv
+
+# Exécutables compilés par Go
+# Pour Windows:
+*.exe
+# Pour Linux/macOS (si tu compiles pour ces plateformes avec `go build`):
+# Le nom par défaut de l'exécutable est souvent le nom du dossier du module.
+# Si ton module s'appelle "byod_monitor_go", l'exécutable pourrait être "byod_monitor_go".
+# Tu peux être plus spécifique si tu connais le nom de ton exécutable.
+# Exemple si ton module est byod_monitor_go:
+byod_monitor_go
+
+# Fichiers et dossiers spécifiques à l'IDE VS Code
+.vscode/
+
+# Fichiers et dossiers spécifiques à d'autres IDEs (IntelliJ, etc.)
+.idea/
+
+# Fichiers de swap de certains éditeurs
+*.swp
+*~
+# Fichiers temporaires de certains éditeurs
+*.tmp
+*.bak
+*.old
+
+# Fichiers spécifiques à macOS
+.DS_Store
+._*
+
+# Si jamais tu utilises des logs redirigés dans des fichiers locaux que tu ne veux pas versionner
+*.log
+
+# Si tu avais un dossier node_modules à la racine pour une raison (non applicable ici)
+# /node_modules/
+
+# Fichiers de build ou de cache spécifiques à Go (généralement non nécessaires
+# car `go clean -cache` s'en occupe, mais par précaution pour d'autres outils)
+/vendor/
