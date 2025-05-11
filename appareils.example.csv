@@ -1,0 +1,5 @@
+Nom,Adresse,MAC,Pavillon,Technologie
+Exemple-VIA-Salle101,via-salle101.example.com,AA:BB:CC:00:11:22,A,VIA
+Exemple-Ecran-Amphi,ecran-amphi.example.com,DD:EE:FF:33:44:55,B,Mersive
+Exemple-VIA-Labo2,via-labo2.example.com,11:22:33:AA:BB:CC,C,VIA
+Exemple-Autre-Appareil,autre.example.com,FF:EE:DD:99:88:77,A,AutreTech
