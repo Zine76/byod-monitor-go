@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Moniteur des appareils AV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div class="logo">🔌 Moniteur AV</div></header>
+
+  <div class="filters">
+    <input type="text" id="search" placeholder="Rechercher…">
+    <select id="filter-building">
+      <option value="">Tous les pavillons</option>
+    </select>
+    <select id="filter-tech">
+      <option value="">Toutes les technologies</option>
+    </select>
+    <select id="filter-status">
+      <option value="">Tous les statuts</option>
+      <option value="online">En ligne</option>
+      <option value="offline">Hors ligne</option>
+      <option value="rebooting">Reboot en cours</option>
+    </select>
+  </div>
+
+  <div class="container" id="status-container"></div>
+
+  <div id="sidebar" class="sidebar">
+    <div class="close-btn" onclick="closeSidebar()">✖</div>
+    <h2 id="detail-name">Détails</h2>
+    <p><strong>IP :</strong> <span id="detail-ip"></span> <button onclick="copyToClipboard('detail-ip')">📋</button></p>
+    <p><strong>MAC :</strong> <span id="detail-mac"></span> <button onclick="copyToClipboard('detail-mac')">📋</button></p>
+    <p><strong>Dernier test :</strong> <span id="detail-time"></span></p>
+    <a id="detail-link" class="btn" target="_blank">Ouvrir l’interface web</a>
+    <button class="btn" onclick="rebootDevice()">🔁 Rebooter</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
